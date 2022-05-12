@@ -1,0 +1,23 @@
+	@x
+	M=0
+	@sum
+	M=0
+(LOOP)
+	@x
+	D=M
+	@10
+	D=D-A
+	@END
+	D;JGE
+	@x
+	D=M
+	@sum
+	M=D+M
+	@x
+	M=M+1
+	@LOOP
+	0,JMP
+(END)
+	@END
+	0;JMP
+	
